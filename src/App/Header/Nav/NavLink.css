@@ -1,0 +1,8 @@
+.App-navLink {
+  color: #fff;
+  text-decoration: none;
+}
+
+.App-navLink.is-active {
+  text-decoration: underline;
+}

@@ -1,6 +1,6 @@
-import App from './App.js';
-import Home from './Home.js';
-import Foo from './Foo.js';
+import App from './App/App.js';
+import Home from './Home/Home.js';
+import Foo from './Foo/Foo.js';
 
 const routes = {
   path: '/',
@@ -11,4 +11,4 @@ const routes = {
   ]
 };
 
-export default routes
+export default routes;
