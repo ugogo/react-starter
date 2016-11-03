@@ -21,8 +21,8 @@ Home.propTypes = {
   increment: PropTypes.func.isRequired
 };
 
-const mapStateToProps = ({ counter }) => ({
-  counterTotal: counter
+const mapStateToProps = (state) => ({
+  counterTotal: state.getIn(['counter', 'total'])
 });
 
 const mapDispatchToProps = (dispatch) => {
