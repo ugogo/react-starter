@@ -3,11 +3,11 @@ import NavLink from './NavLink.js';
 import './Nav.css';
 
 const Nav = () =>
-  <ul className="App-nav">
-    <li className="App-navItem">
+  <ul className="Nav">
+    <li className="Nav-item">
       <NavLink to='/'>Home</NavLink>
     </li>
-    <li className="App-navItem">
+    <li className="Nav-item">
       <NavLink to='/foo'>Foo</NavLink>
     </li>
   </ul>
