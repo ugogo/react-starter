@@ -1,15 +1,15 @@
-import React from 'react';
-import { render } from 'react-dom';
-import { Router, browserHistory } from 'react-router';
-import { Provider } from 'react-redux';
-import routes from './routes.js';
-import store from './store.js';
+import { Router, browserHistory } from "react-router";
+import { Provider } from "react-redux";
+import React from "react";
+import { render } from "react-dom";
+import routes from "./routes.js";
+import store from "./store.js";
 
-import './index.css';
+import "./index.css";
 
 render(
   <Provider store={store}>
     <Router history={browserHistory} routes={routes} />
   </Provider>,
-  document.getElementById('root')
+  document.getElementById("root")
 );

@@ -1,6 +1,6 @@
-import React from 'react';
-import Header from '../Header/Header.js';
-import './Wrapper.css';
+import Header from "../Header/Header.js";
+import React from "react";
+import "./Wrapper.css";
 
 const Wrapper = ({ children }) =>
   <div className="App">

@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router';
-import './NavLink.css';
+import { Link } from "react-router";
+import React from "react";
+import "./NavLink.css";
 
 const NavLink = (props) =>
   <Link className="Nav-link" activeClassName="is-active" onlyActiveOnIndex={true} {...props}>

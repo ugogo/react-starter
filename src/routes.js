@@ -1,14 +1,17 @@
-import Wrapper from './components/Wrapper/Wrapper.js';
-import Home from './containers/Home.js';
-import Foo from './components/Foo/Foo.js';
+import Foo from "./components/Foo/Foo.js";
+import Home from "./containers/Home.js";
+import Wrapper from "./components/Wrapper/Wrapper.js";
 
 const routes = {
-  path: '/',
+  childRoutes: [
+    {
+      component: Foo,
+      path: "foo",
+    },
+  ],
   component: Wrapper,
   indexRoute: { component: Home },
-  childRoutes: [
-    { path: 'foo', component: Foo },
-  ]
+  path: "/",
 };
 
 export default routes;

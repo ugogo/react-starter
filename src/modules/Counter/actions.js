@@ -1,9 +1,9 @@
-import { DECREMENT, INCREMENT } from './constants.js';
+import { DECREMENT, INCREMENT } from "./constants.js";
 
 export const decrement = () => ({
-  type: DECREMENT
+  type: DECREMENT,
 });
 
 export const increment = () => ({
-  type: INCREMENT
+  type: INCREMENT,
 });

@@ -1,7 +1,7 @@
-import React from 'react';
-import Nav from '../Nav/Nav.js';
-import ReactLogo from './React-logo.svg';
-import './Header.css'
+import Nav from "../Nav/Nav.js";
+import React from "react";
+import ReactLogo from "./React-logo.svg";
+import "./Header.css";
 
 const Header = () =>
   <div className="Header">

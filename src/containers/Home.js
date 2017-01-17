@@ -1,17 +1,17 @@
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { decrement, increment } from '../modules/Counter/actions.js';
-import Home from '../components/Home/Home.js';
+import { decrement, increment } from "../modules/Counter/actions.js";
+import Home from "../components/Home/Home.js";
+import { bindActionCreators } from "redux";
+import { connect } from "react-redux";
 
 const mapStateToProps = (state) => ({
-  counterTotal: state.getIn(['counter', 'total'])
+  counterTotal: state.getIn(["counter", "total"]),
 });
 
 const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({
+    decrement,
     increment,
-    decrement
-  }, dispatch)
+  }, dispatch);
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
